@@ -1,0 +1,136 @@
+C:\Program Files\Support Tools>Srvrmgr /g sm-test-db /e sba_80 /u sadmin /p SADMIN_Areon_2013
+Siebel Enterprise Applications Siebel Server Manager, Version 8.0.0.13 [20448] LANG_INDEPENDENT
+Copyright (c) 2001 Siebel Systems, Inc.  All rights reserved.
+
+This software is the property of Siebel Systems, Inc., 2207 Bridgepointe Parkway,
+San Mateo, CA 94404.
+
+User agrees that any use of this software is governed by: (1) the applicable
+user limitations and other terms and conditions of the license agreement which
+has been entered into with Siebel Systems or its authorized distributors; and
+(2) the proprietary and restricted rights notices included in this software.
+
+WARNING: THIS COMPUTER PROGRAM IS PROTECTED BY U.S. AND INTERNATIONAL LAW.
+UNAUTHORIZED REPRODUCTION, DISTRIBUTION OR USE OF THIS PROGRAM, OR ANY PORTION
+OF IT, MAY RESULT IN SEVERE CIVIL AND CRIMINAL PENALTIES, AND WILL BE
+PROSECUTED TO THE MAXIMUM EXTENT POSSIBLE UNDER THE LAW.
+
+If you have received this software in error, please notify Siebel Systems
+immediately at (650) 295-5000.
+
+Type "help" for list of commands, "help <topic>" for detailed help
+
+Connected to 2 server(s) out of a total of 2 server(s) in the enterprise
+
+srvrmgr> list servers
+
+SBLSRVR_NAME  SBLSRVR_GROUP_NAME  HOST_NAME   INSTALL_DIR        SBLMGR_PID  SV_DISP_STATE  SBLSRVR_STATE  START_TIME           END_TIME  SBLSRVR_STATUS
+------------  ------------------  ----------  -----------------  ----------  -------------  -------------  -------------------  --------  ---------------------------------
+SMTESTDB                          SM-TEST-DB  C:\sba80\siebsrvr  1856        Running        Running        2019-11-15 14:36:56            8.0.0.13 [20448] LANG_INDEPENDENT
+SBLAPPTWHG01                      SBL-APP-TWHG-01  C:\sba80\siebsrvr  5772        Running        Running        2019-11-14 16:43:39            8.0.0.13 [20448] LANG_INDEPENDENT
+
+2 rows returned.
+
+srvrmgr> list components
+
+SV_NAME       CC_ALIAS                   CC_NAME                                                  CT_ALIAS     CG_ALIAS    CC_RUNMODE   CP_DISP_RUN_STATE  CP_STARTMODE  CP_NUM_RUN_  CP_MAX_TASK  CP_ACTV_MTS  CP_MAX_MTS_  CP_START_TIME        CP_END_TIME  CC_INCARN_NO  CC_DESC_TEXT
+------------  -------------------------  -------------------------------------------------------  -----------  ----------  -----------  -----------------  ------------  -----------  -----------  -----------  -----------  -------------------  -----------  ------------  ------------
+SBLAPPTWHG01  DocServer                  Document Server                                          BusSvcMgr    eDocuments  Batch        Online             Auto          0            1            1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  FINSConsoleObjMgr_enu      FINS Customer Relationship Console Object Manager (ENU)  AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  FINSObjMgr_enu             FINS Object Manager (ENU)                                AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  FINSeBankingObjMgr_enu     FINS eBanking Object Manager (ENU)                       AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  FINSeBrokerageObjMgr_enu   FINS eBrokerage Object Manager (ENU)                     AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  FINSeChannelObjMgr_enu     FINS eChannel Object Manager (ENU)                       AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  FINSeEnrollmentObjMgr_enu  FINS eEnrollment Object Manager (ENU)                    AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  FINSeSalesObjMgr_enu       FINS eSales Object Manager (ENU)                         AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  FSMSrvr                    File System Manager                                      FSMSrvr      SystemAux   Batch        Online             Auto          0            20           1            1            2019-11-14 16:43:45
+SBLAPPTWHG01  FINSeCustomerObjMgr_enu    Financial eCustomer Object Manager (ENU)                 AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  INSeServiceObjMgr_enu      Insurance eService Object Manager (ENU)                  AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-14 16:43:50
+SBLAPPTWHG01  ServerMgr                  Server Manager                                           ServerMgr    System      Interactive  Running            Auto          1            20                                     2019-11-14 16:43:39
+SBLAPPTWHG01  SRBroker                   Server Request Broker                                    ReqBroker    System      Interactive  Running            Auto          18           100          1            1            2019-11-14 16:43:39
+SBLAPPTWHG01  SRProc                     Server Request Processor                                 SRProc       SystemAux   Interactive  Running            Auto          2            20           1            1            2019-11-14 16:43:45
+SBLAPPTWHG01  SvrTblCleanup              Server Tables Cleanup                                    BusSvcMgr    SystemAux   Background   Running            Auto          1            1                                      2019-11-14 16:43:45
+SBLAPPTWHG01  SvrTaskPersist             Server Task Persistance                                  BusSvcMgr    SystemAux   Background   Running            Auto          1            1                                      2019-11-14 16:43:45
+SBLAPPTWHG01  AdminNotify                Siebel Administrator Notification Component              AdminNotify  SystemAux   Batch        Online             Auto          0            10           1            1            2019-11-14 16:43:45
+SBLAPPTWHG01  SCBroker                   Siebel Connection Broker                                 SCBroker     System      Background   Running            Auto          1            1                                      2019-11-14 16:43:39
+SMTESTDB      ADMBatchProc               Application Deployment Manager Batch Processor           BusSvcMgr    ADM         Batch        Unavailable        Auto          0            1            0            1            2019-11-15 14:37:06
+SMTESTDB      ADMObjMgr_enu              Application Deployment Manager Object Manager (ENU)      AppObjMgr    ADM         Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      ADMProc                    Application Deployment Manager Processor                 BusSvcMgr    ADM         Batch        Unavailable        Auto          0            3            0            1            2019-11-15 14:37:06
+SMTESTDB      AsgnSrvr                   Assignment Manager                                       AsgnSrvr     AsgnMgmt    Batch        Unavailable        Auto          0            20           0            1            2019-11-15 14:37:06
+SMTESTDB      AsgnBatch                  Batch Assignment                                         AsgnBatch    AsgnMgmt    Batch        Online             Auto          0            20                                     2019-11-15 14:37:06
+SMTESTDB      BusIntBatchMgr             Business Integration Batch Manager                       BusSvcMgr    EAI         Batch        Unavailable        Auto          0            20           0            1            2019-11-15 14:37:06
+SMTESTDB      BusIntMgr                  Business Integration Manager                             BusSvcMgr    EAI         Batch        Unavailable        Auto          0            20           0            1            2019-11-15 14:37:06
+SMTESTDB      CommConfigMgr              Communications Configuration Manager                     BusSvcMgr    CommMgmt    Batch        Unavailable        Auto          0            20           0            1            2019-11-15 14:37:06
+SMTESTDB      CommInboundProcessor       Communications Inbound Processor                         BusSvcMgr    CommMgmt    Batch        Unavailable        Auto          0            50           0            1            2019-11-15 14:37:06
+SMTESTDB      CommInboundRcvr            Communications Inbound Receiver                          CommInboundRcvr  CommMgmt    Batch        Unavailable        Auto          0            21           0            1            2019-11-15 14:37:06
+SMTESTDB      CommOutboundMgr            Communications Outbound Manager                          BusSvcMgr    CommMgmt    Batch        Unavailable        Auto          0            50           0            1            2019-11-15 14:37:06
+SMTESTDB      CommSessionMgr             Communications Session Manager                           CommSessionMgr  CommMgmt    Batch        Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      CustomAppObjMgr_enu        Custom Application Object Manager (ENU)                  CustomAppObjMgr  EAI         Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      DbXtract                   Database Extract                                         DbXtract     Remote      Batch        Online             Auto          0            10                                     2019-11-15 14:37:06
+SMTESTDB      EAIObjMgr_enu              EAI Object Manager (ENU)                                 EAIObjMgr    EAI         Interactive  Unavailable        Auto          0            20           0            1            2019-11-15 14:37:06
+SMTESTDB      MailMgr                    Email Manager                                            MailMgr      CommMgmt    Background   Running            Auto          1            20                                     2019-11-15 14:37:06
+SMTESTDB      EIM                        Enterprise Integration Mgr                               EIM          EAI         Batch        Online             Auto          0            5                                      2019-11-15 14:37:06
+SMTESTDB      FINSConsoleObjMgr_enu      FINS Customer Relationship Console Object Manager (ENU)  AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      FINSObjMgr_enu             FINS Object Manager (ENU)                                AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      FINSeBankingObjMgr_enu     FINS eBanking Object Manager (ENU)                       AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      FINSeBrokerageObjMgr_enu   FINS eBrokerage Object Manager (ENU)                     AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      FINSeChannelObjMgr_enu     FINS eChannel Object Manager (ENU)                       AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      FINSeEnrollmentObjMgr_enu  FINS eEnrollment Object Manager (ENU)                    AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      FINSeSalesObjMgr_enu       FINS eSales Object Manager (ENU)                         AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      FSMSrvr                    File System Manager                                      FSMSrvr      SystemAux   Batch        Online             Auto          0            20           1            1            2019-11-15 14:37:01
+SMTESTDB      FINSeCustomerObjMgr_enu    Financial eCustomer Object Manager (ENU)                 AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      GenNewDb                   Generate New Database                                    GenNewDb     Remote      Batch        Online             Auto          0            1                                      2019-11-15 14:37:06
+SMTESTDB      GenTrig                    Generate Triggers                                        GenTrig      Workflow    Batch        Online             Auto          0            1                                      2019-11-15 14:37:06
+SMTESTDB      INSeServiceObjMgr_enu      Insurance eService Object Manager (ENU)                  AppObjMgr    Fins        Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      KSCCObjMgr_enu             KS Call Center Object Manager (ENU)                      AppObjMgr    Communications  Interactive  Online             Auto          0            270          1            1            2019-11-15 14:37:06
+SMTESTDB      KS35WorkMon                KS35 Workflow Monitor Agent                              WorkMon      Workflow    Background   Running            Auto          1            10                                     2019-11-15 14:37:06
+SMTESTDB      KS53WorkMon                KS53 Workflow Monitor Agent                              WorkMon      Workflow    Background   Running            Auto          1            1                                      2019-11-15 14:37:06
+SMTESTDB      KS53AsgnmtWorkMon          KS53 Workflow Monitor Agent Assignment                   WorkMon      Workflow    Background   Running            Auto          1            1                                      2019-11-15 14:37:06
+SMTESTDB      KS53WfProcMgr              KS53 Workflow Process Manager                            BusSvcMgr    Workflow    Batch        Unavailable        Auto          0            150          0            1            2019-11-15 14:37:06
+SMTESTDB      KS73LeadWorkMon            KS73 Lead Workflow Monitor Agent                         WorkMon      Workflow    Background   Running            Auto          1            1                                      2019-11-15 14:37:06
+SMTESTDB      KS73WorkMon                KS73 Workflow Monitor Agent                              WorkMon      Workflow    Background   Running            Auto          1            1                                      2019-11-15 14:37:06
+SMTESTDB      ListImportSvcMgr           List Import Service Manager                              BusSvcMgr    MktgSrv     Batch        Unavailable        Auto          0            20           0            1            2019-11-15 14:37:06
+SMTESTDB      SMObjMgr_enu               Marketing Object Manager (ENU)                           AppObjMgr    MktgOM      Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      MktgWfProcMgr              Marketing Workflow Process Manager                       BusSvcMgr    Workflow    Batch        Unavailable        Auto          0            150          0            1            2019-11-15 14:37:06
+SMTESTDB      PageMgr                    Page Manager                                             PageMgr      CommMgmt    Background   Online             Auto          0            20                                     2019-11-15 14:37:06
+SMTESTDB      PDbXtract                  Parallel Database Extract                                DbXtract     Remote      Batch        Online             Auto          0            10           1            1            2019-11-15 14:37:06
+SMTESTDB      PSCcObjMgr_enu             Public Sector Object Manager (ENU)                       AppObjMgr    PublicSector  Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      PSeServiceObjMgr_enu       Public Sector eService Object Manager (ENU)              AppObjMgr    PublicSector  Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      RepAgent                   Replication Agent                                        RepAgent     Remote      Background   Online             Auto          0            1                                      2019-11-15 14:37:06
+SMTESTDB      SSEObjMgr_enu              Sales Object Manager (ENU)                               AppObjMgr    Sales       Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      ServerMgr                  Server Manager                                           ServerMgr    System      Interactive  Running            Auto          1            20                                     2019-11-15 14:36:56
+SMTESTDB      SRBroker                   Server Request Broker                                    ReqBroker    System      Interactive  Running            Auto          38           100          1            1            2019-11-15 14:36:56
+SMTESTDB      SRProc                     Server Request Processor                                 SRProc       SystemAux   Interactive  Running            Auto          2            20           1            1            2019-11-15 14:37:01
+SMTESTDB      SvrTblCleanup              Server Tables Cleanup                                    BusSvcMgr    SystemAux   Background   Online             Auto          0            1                                      2019-11-15 14:37:01
+SMTESTDB      SvrTaskPersist             Server Task Persistance                                  BusSvcMgr    SystemAux   Background   Online             Auto          0            1                                      2019-11-15 14:37:01
+SMTESTDB      AdminNotify                Siebel Administrator Notification Component              AdminNotify  SystemAux   Batch        Online             Auto          0            10           1            1            2019-11-15 14:37:01
+SMTESTDB      SCBroker                   Siebel Connection Broker                                 SCBroker     System      Background   Running            Auto          1            2                                      2019-11-15 14:36:56
+SMTESTDB      SMCObjMgr_enu              Siebel Mobile Connector Object Manager (ENU)             AppObjMgr    Sales       Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      eProdCfgObjMgr_enu         Siebel Product Configuration Object Manager (ENU)        AppObjMgr    ISS         Interactive  Unavailable        Auto          0            40           0            2            2019-11-15 14:37:06
+SMTESTDB      SmScriptObjMgr_enu         SmScriptObjMgr_enu                                       AppObjMgr    Communications  Interactive  Online             Auto          0            100          1            1            2019-11-15 14:37:06
+SMTESTDB      SmartAnswer                Smart Answer Manager                                     BusSvcMgr    CommMgmt    Batch        Unavailable        Auto          0            20           0            1            2019-11-15 14:37:06
+SMTESTDB      SynchMgr                   Synchronization Manager                                  SynchMgr     Remote      Interactive  Online             Auto          0            100          1            1            2019-11-15 14:37:06
+SMTESTDB      TxnMerge                   Transaction Merger                                       TxnMerge     Remote      Background   Running            Auto          1            10                                     2019-11-15 14:37:06
+SMTESTDB      TxnProc                    Transaction Processor                                    TxnProc      Remote      Background   Running            Auto          1            1                                      2019-11-15 14:37:06
+SMTESTDB      TxnRoute                   Transaction Router                                       TxnRoute     Remote      Background   Running            Auto          1            10                                     2019-11-15 14:37:06
+SMTESTDB      WorkActn                   Workflow Action Agent                                    WorkActn     Workflow    Background   Online             Auto          0            20                                     2019-11-15 14:37:06
+SMTESTDB      WorkMon                    Workflow Monitor Agent                                   WorkMon      Workflow    Background   Online             Auto          0            100                                    2019-11-15 14:37:06
+SMTESTDB      WfProcBatchMgr             Workflow Process Batch Manager                           BusSvcMgr    Workflow    Batch        Unavailable        Auto          0            100          0            2            2019-11-15 14:37:06
+SMTESTDB      WfProcMgr                  Workflow Process Manager                                 BusSvcMgr    Workflow    Batch        Unavailable        Auto          0            150          0            1            2019-11-15 14:37:06
+SMTESTDB      WfRecvMgr                  Workflow Recovery Manager                                BusSvcMgr    Workflow    Batch        Unavailable        Auto          0            20           0            1            2019-11-15 14:37:06
+SMTESTDB      eChannelCMEObjMgr_enu      eChannel Power Communications Object Manager (ENU)       AppObjMgr    Communications  Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      eCommunicationsObjMgr_enu  eCommunications Object Manager (ENU)                     AppObjMgr    Communications  Interactive  Online             Auto          0            200          1            1            2019-11-15 14:37:06
+SMTESTDB      eCommWirelessObjMgr_enu    eCommunications for Wireless Object Manager (ENU)        AppObjMgr    Communications  Interactive  Online             Auto          0            90           1            1            2019-11-15 14:37:06
+SMTESTDB      eCustomerObjMgr_enu        eCustomer Object Manager (ENU)                           AppObjMgr    ISS         Interactive  Online             Auto          0            40           1            2            2019-11-15 14:37:06
+SMTESTDB      eCustomerCMEObjMgr_enu     eCustomer Power Communications Object Manager (ENU)      AppObjMgr    Communications  Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      eEnergyObjMgr_enu          eEnergy Object Manager (ENU)                             AppObjMgr    Communications  Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      eEventsObjMgr_enu          eEvents Object Manager (ENU)                             AppObjMgr    MktgOM      Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      eMarketObjMgr_enu          eMarketing Object Manager (ENU)                          AppObjMgr    MktgOM      Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      eMediaObjMgr_enu           eMedia Object Manager (ENU)                              AppObjMgr    Communications  Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      eEnergyOGCObjMgr_enu       eOil Gas & Chemicals  Object Manager (ENU)               AppObjMgr    Communications  Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+SMTESTDB      eSalesObjMgr_enu           eSales Object Manager (ENU)                              AppObjMgr    ISS         Interactive  Online             Auto          0            40           1            2            2019-11-15 14:37:06
+SMTESTDB      eSalesCMEObjMgr_enu        eSales Power Communications Object Manager (ENU)         AppObjMgr    Communications  Interactive  Online             Auto          0            20           1            1            2019-11-15 14:37:06
+
+95 rows returned.
+
+srvrmgr>
